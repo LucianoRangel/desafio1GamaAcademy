@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: wrap;	
+}
+
+.cabecalho{
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size:30px;
+    flex-direction: column;
+    border: 1px dashed red;
+}
+
+.cabecalho img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.secaoPrincipal{    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 62vh;
+    width: 100%;
+    background-color: black;
+    color: blanchedalmond;
+    border: 1px dashed red;
+    text-align: center;
+}
+
+.secaoPrincipal img{
+    height: 180px;
+}
+
+.secaoPrincipalDiv1{
+    width: 75%;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.card-container{
+    width: 25%;
+    height: 60vh;
+    justify-content: center;
+    font-size:170%;
+    color:#fff;
+}
+
+input{
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 12px;
+    background: #1C1C1C;
+    color: #fff;
+    justify-content: center;
+}
+
+form{
+    display: grid;
+    text-align: center;
+}
+
+footer{
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: 1px dashed red;
+}
+
+.rodape{
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.rodape img{
+    width: 20%;
+    vertical-align: middle;
+}
+
+.rodapeRedeSocial{
+    width: 100%;
+    text-align: center;
+}
+
+.rodapeRedeSocial img{
+    width: 18%;
+}
+
+.rodapeRedeSocial ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 768px){
+    footer{
+        clear: both;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+    }
+    .rodape{
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .rodapeRedeSocial{
+        width: 50%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width:769px){
+    footer{
+        clear: both;
+        width: 100%;
+        margin-bottom: 3%;
+        background-color: #000;
+        color: #fff;
+    }
+    .rodape{
+        font-size: 1em;
+        width: 45%;
+        float: left;
+        text-align: left;
+    }
+    .rodape img, .rodapeRedeSocial img{
+        width: 10%;
+    }
+    .rodapeRedeSocial{
+        width: 45%;
+        float: right;
+        margin-right: 1%;
+        text-align: right;
+    }
+}
